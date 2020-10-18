@@ -1,0 +1,44 @@
+texto{
+    color:antiquewhite;
+}
+ul{
+    background-color:black;
+    text-align: center;
+    list-style: inside;
+    font-family: 'Times New Roman', Times, serif;
+    color:antiquewhite ;    
+    border-style: ridge;
+}
+h1{background-color: antiquewhite;
+    color:black;
+    text-align: center;
+}
+
+h2{background-color: antiquewhite;
+    color:black;
+    text-align: center;
+}
+h3{
+    background-color: antiquewhite;
+    text-align: center;
+    color:black;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.text{
+    background-color: black;
+    color: antiquewhite;
+    border-style: ridge;
+}
+footer{
+    text-align: center;
+    text-anchor: end;
+}
+a{
+    color:antiquewhite;    
+}
+
