@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE projectrecord SYSTEM "file:/home/ulisses/Desktop/Uni/DAW/DAW2020/T2/projectrecord.dtd">
+<projectrecord>
+    <keyname>TPC2</keyname>
+    <title>TPC 2 de DAW 2020</title>
+    <subtitle>XML e DTD de um Project Record</subtitle>
+    <begindate>Outubro 2020</begindate>
+    <enddate>Outubro 2020</enddate>
+    <supervisor>
+        <texto>José Carlos Ramalho</texto>
+        <link>www4.di.uminho.pt/~jcr/</link>
+    </supervisor>
+    <workteam>
+        <membro>
+            <nome>Ulisses Tiago Simões Araújo</nome>
+            <numero>A84010</numero>
+            <email>a84010@alunos.uminho.pt</email>
+        </membro>
+    </workteam>
+    <abstract>
+        <paragrafo>
+            <texto>Neste <bold>TPC</bold> foi-me proposto criar uma <italico>Document Type Definition</italico> que descrevesse um <sublinhado>Project Record</sublinhado> e toda a informação a si relevante.</texto>
+        </paragrafo>
+        <paragrafo>
+            <texto>Em conjunto com esse mesmo ficheiro foi também construido um ficheiro <italico>XML</italico> denominado por <bold>projectrecord.xml</bold> que foi validado utilizando a schema DTD denominada <bold>projectrecord.dtd</bold>.</texto>
+        </paragrafo>
+    </abstract>
+    <deliverables>
+        <item>
+            <texto>projectrecord.dtd</texto>
+            <link>www.github.com/Ulissestsaraujo/DAW2020/blob/main/T2/projectrecord.dtd</link>
+        </item>
+        <item>
+            <texto>projectrecord.xml</texto>
+            <link>www.github.com/Ulissestsaraujo/DAW2020/blob/main/T2/projectrecord.xml</link>
+        </item>
+    </deliverables>
+</projectrecord>
