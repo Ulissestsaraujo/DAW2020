@@ -7,31 +7,31 @@
     <begindate>Outubro 2020</begindate>
     <enddate>Outubro 2020</enddate>
     <supervisor>
-        <texto>José Carlos Ramalho</texto>
+        <text>José Carlos Ramalho</text>
         <link>www4.di.uminho.pt/~jcr/</link>
     </supervisor>
     <workteam>
-        <membro>
-            <nome>Ulisses Tiago Simões Araújo</nome>
-            <numero>A84010</numero>
+        <member>
+            <name>Ulisses Tiago Simões Araújo</name>
+            <number>A84010</number>
             <email>a84010@alunos.uminho.pt</email>
-        </membro>
+        </member>
     </workteam>
     <abstract>
-        <paragrafo>
-            <texto>Neste <bold>TPC</bold> foi-me proposto criar uma <italico>Document Type Definition</italico> que descrevesse um <sublinhado>Project Record</sublinhado> e toda a informação a si relevante.</texto>
-        </paragrafo>
-        <paragrafo>
-            <texto>Em conjunto com esse mesmo ficheiro foi também construido um ficheiro <italico>XML</italico> denominado por <bold>projectrecord.xml</bold> que foi validado utilizando a schema DTD denominada <bold>projectrecord.dtd</bold>.</texto>
-        </paragrafo>
+        <paragraph>
+            <text>Neste <bold>TPC</bold> foi-me proposto criar uma <italic>Document Type Definition</italic> que descrevesse um <underlined>Project Record</underlined> e toda a informação a si relevante.</text>
+        </paragraph>
+        <paragraph>
+            <text>Em conjunto com esse mesmo ficheiro foi também construido um ficheiro <italic>XML</italic> denominado por <bold>projectrecord.xml</bold> que foi validado utilizando a schema DTD denominada <bold>projectrecord.dtd</bold>.</text>
+        </paragraph>
     </abstract>
     <deliverables>
         <item>
-            <texto>projectrecord.dtd</texto>
+            <text>projectrecord.dtd</text>
             <link>www.github.com/Ulissestsaraujo/DAW2020/blob/main/T2/projectrecord.dtd</link>
         </item>
         <item>
-            <texto>projectrecord.xml</texto>
+            <text>projectrecord.xml</text>
             <link>www.github.com/Ulissestsaraujo/DAW2020/blob/main/T2/projectrecord.xml</link>
         </item>
     </deliverables>

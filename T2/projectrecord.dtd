@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT projectrecord (keyname, title, subtitle?, begindate, enddate, supervisor,workteam, abstract, deliverables)>
-<!ELEMENT supervisor (texto, link) >
-<!ELEMENT texto (#PCDATA|bold|italico|sublinhado|link)* >
+<!ELEMENT supervisor (text, link) >
+<!ELEMENT text (#PCDATA|bold|italic|underlined|link)* >
 <!ELEMENT link (#PCDATA) >
 <!ELEMENT keyname (#PCDATA) >
 <!ELEMENT title (#PCDATA) >
@@ -10,20 +10,20 @@
 <!ELEMENT enddate (#PCDATA) >
 
 
-<!ELEMENT workteam (membro)+>
-<!ELEMENT membro (nome,numero, email) >
-<!ATTLIST membro
+<!ELEMENT workteam (member)+>
+<!ELEMENT member (name,number, email) >
+<!ATTLIST member
     weblink CDATA #IMPLIED>
-<!ELEMENT nome (#PCDATA) >
-<!ELEMENT numero (#PCDATA) >
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT number (#PCDATA) >
 <!ELEMENT email (#PCDATA) >
 
-<!ELEMENT abstract (paragrafo)* >
-<!ELEMENT paragrafo (texto) >
+<!ELEMENT abstract (paragraph)* >
+<!ELEMENT paragraph (text) >
 
 <!ELEMENT bold (#PCDATA)>
-<!ELEMENT sublinhado (#PCDATA)>
-<!ELEMENT italico (#PCDATA)>
+<!ELEMENT underlined (#PCDATA)>
+<!ELEMENT italic (#PCDATA)>
 
 <!ELEMENT deliverables (item)+ >
-<!ELEMENT item (texto, link) >
+<!ELEMENT item (text, link) >
