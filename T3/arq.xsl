@@ -3,69 +3,77 @@
     version="2.0">
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
    <xsl:template match="/">
+       <xsl:result-document href="site/index.html">
        <html style="background-color:lightgrey;">
            <head>
                <title>Arquivo Arqueológico</title>
            </head>
+           
            <body>
                <h2>Arquivo Arqueológico</h2>
-               <table border="1" width="100%">
-                   <tr>
-                   <td width="30%" valign="top">
-                   <h3>Indice de Locais</h3>
-                   <ol>
-                       <xsl:apply-templates select="//ARQELEM" mode="indice">
-                           <xsl:sort select="IDENTI"></xsl:sort>
-                       </xsl:apply-templates>
-                   </ol>
-                   </td>
-                   <td width="70%" valign="top">
-                       <xsl:apply-templates select="//ARQELEM" mode="conteudo"></xsl:apply-templates>
-                   </td>
-                   </tr>
-               </table>
+               <h3>Indíce de Lugares</h3>
+               <ol>
+                   <xsl:apply-templates select="//ARQELEM" mode="indice">
+                       <xsl:sort select="IDENTI"/>
+                   </xsl:apply-templates>
+               </ol>
            </body>
        </html>
+       </xsl:result-document>
+       <xsl:apply-templates/>
    </xsl:template>  
+    
+    <!-- Template de indice -->
     
     <xsl:template match="ARQELEM" mode="indice">
         <li>
-        <a name="i{generate-id()}"/>
-        <a href="#{generate-id()}"><xsl:value-of select="IDENTI"/></a>
+            <a name="i{generate-id()}"/>
+            <a href="{generate-id()}.html">
+                <xsl:value-of select="IDENTI"/></a>
         </li>
-    </xsl:template>
+        
+    </xsl:template>      
+    <!-- Template conteudo -->
     
-    <xsl:template match="ARQELEM" mode="conteudo">
-        <a name="{generate-id()}"></a>
-        <h2>Identificação: <xsl:value-of select="IDENTI"/></h2>
-        <p><b>Tipo: </b> <xsl:value-of select="TIPO"/></p>
+    <xsl:template match="ARQELEM">
         
-        <p><b>Imagem: </b><xsl:value-of select="IMAGEM/@Nome"/></p>
-        <p><b>Descrição:</b> <xsl:value-of select="Descri"/></p>
-        <p><b>Crono: </b> <xsl:value-of select="CRONO"/></p>
-        <p><b>Lugar: </b> <xsl:value-of select="LUGAR"/></p>
-        <p><b>Freguesia: </b> <xsl:value-of select="FREGUE"/></p>
-        <p><b>Concelho: </b> <xsl:value-of select="CONCEL"/></p>
-        <p><b>CODADM: </b> <xsl:value-of select="CODADM"/></p>
-        <p><b>Latitude: </b> <xsl:value-of select="LATITU"/></p>
-        <p><b>Longitude: </b> <xsl:value-of select="LONGIT"/></p>
-        <p><b>Acesso: </b> <xsl:value-of select="ACESSO"/></p>
-        <p><b>Quadro: </b> <xsl:value-of select="QUADRO"/></p>
-        <p><b>TRAARQ: </b> <xsl:value-of select="TRAARQ"/></p>
-        <p><b>DESARQ: </b> <xsl:value-of select="DESARQ"/></p>
-        <p><b>INTERP: </b> <xsl:value-of select="INTERP"/></p>
-        <p><b>Depósitos:</b> <xsl:value-of select="DEPOSI"/></p>
-        <p><b>Interesses: </b> <xsl:value-of select="INTERE"/></p>
-        <p><b>Bibliografia: </b> <xsl:value-of select="BIBLIO"/></p>
-        <p><b >Autor: </b> <xsl:value-of select="AUTOR"/></p>
-        <p><b>Data: </b> <xsl:value-of select="DATA"/></p>
+        <xsl:result-document href="site/{generate-id()}.html">
+            <html>
+                <head>
+                    <title>
+                        <xsl:value-of select="IDENTI"/>
+                    </title>
+                </head>
+                <body>
+                    <a name="{generate-id()}"/>
+                    <h2>Identificação: <xsl:value-of select="IDENTI"/></h2>
+                    <p><b>Tipo: </b> <xsl:value-of select="TIPO"/></p>
+                    
+                    <p><b>Imagem: </b></p> <img src="{IMAGEM/@NOME}"/>
+                    <p><b>Descrição:</b> <xsl:value-of select="Descri"/></p>
+                    <p><b>Crono: </b> <xsl:value-of select="CRONO"/></p>
+                    <p><b>Lugar: </b> <xsl:value-of select="LUGAR"/></p>
+                    <p><b>Freguesia: </b> <xsl:value-of select="FREGUE"/></p>
+                    <p><b>Concelho: </b> <xsl:value-of select="CONCEL"/></p>
+                    <p><b>Código Administrativo: </b> <xsl:value-of select="CODADM"/></p>
+                    <p><b>Latitude: </b> <xsl:value-of select="LATITU"/></p>
+                    <p><b>Longitude: </b> <xsl:value-of select="LONGIT"/></p>
+                    <p><b>Acesso: </b> <xsl:value-of select="ACESSO"/></p>
+                    <p><b>Enquadramento: </b> <xsl:value-of select="QUADRO"/></p>
+                    <p><b>Trajeto Arqueológico: </b> <xsl:value-of select="TRAARQ"/></p>
+                    <p><b>Desenho Arqueológico: </b> <xsl:value-of select="DESARQ"/></p>
+                    <p><b>Interpretação: </b> <xsl:value-of select="INTERP"/></p>
+                    <p><b>Depósitos:</b> <xsl:value-of select="DEPOSI"/></p>
+                    <p><b>Interesses: </b> <xsl:value-of select="INTERE"/></p>
+                    <p><b>Bibliografia: </b> <xsl:value-of select="BIBLIO"/></p>
+                    <p><b>Autor: </b> <xsl:value-of select="AUTOR"/></p>
+                    <p><b>Data: </b> <xsl:value-of select="DATA"/></p>
+                    <address><a href="index.html#i{generate-id()}">Voltar ao índice</a></address>
+                </body>
+            </html>
+        </xsl:result-document>
         
-        <address>
-            [<a href="#i{generate-id()}">Voltar ao índice</a>]
-        </address>
-        <center>
-            <hr width="80%"/>
-        </center>
     </xsl:template>
+ 
     
 </xsl:stylesheet>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE projectrecord SYSTEM "file:/home/ulisses/Desktop/Uni/DAW/DAW2020/T2/projectrecord.dtd">
+<projectrecord>
+    <keyname>TPC3</keyname>
+    <title>TPC 3 de DAW 2020</title>
+    <subtitle>DTD e XSL de um Arquivo Arqueológico</subtitle>
+    <begindate>Outubro 2020</begindate>
+    <enddate>Outubro 2020</enddate>
+    <supervisor>
+        <text>José Carlos Ramalho</text>
+        <link>www4.di.uminho.pt/~jcr/</link>
+    </supervisor>
+    <workteam>
+        <member>
+            <name>Ulisses Tiago Simões Araújo</name>
+            <number>A84010</number>
+            <email>a84010@alunos.uminho.pt</email>
+        </member>
+    </workteam>
+    <abstract>
+        <paragraph>
+            <text>Neste TPC foi-me proposto escrever ambos um ficheiro <bold>DTD</bold> e  um ficheiro <bold>XSL</bold> para validar e estruturar o ficheiro <bold>XML</bold> de um Arquivo Arqueológico.</text>
+        </paragraph>
+    </abstract>
+    <deliverables>
+        <item>
+            <text>arq.dtd</text>
+            <link>https://github.com/Ulissestsaraujo/DAW2020/blob/main/T3/arq.dtd</link>
+        </item>
+        <item>
+            <text>arq.xml</text>
+            <link>https://github.com/Ulissestsaraujo/DAW2020/blob/main/T3/arq.xml</link>
+        </item>
+        <item>
+            <text>arq.xsl</text>
+            <link>https://github.com/Ulissestsaraujo/DAW2020/blob/main/T3/arq.xsl</link>
+        </item>
+        <item>
+            <text>projectrecord.xml</text>
+            <link>https://github.com/Ulissestsaraujo/DAW2020/blob/main/T3/projectrecord.xml</link>
+        </item>
+        
+    </deliverables>
+</projectrecord>
