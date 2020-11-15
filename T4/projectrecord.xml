@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../../Desktop/Uni/DAW/DAW2020/projectrecord.dtd">
+<pr>
+    <meta>
+        <key>TPC4</key>
+        <title>TPC4 de DAW 2020</title>
+        <bdate>Novembro 2020</bdate>
+        <edate>Novembro 2020</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="A84010">
+            <name>Ulisses Tiago Simões Araújo</name>
+            <email>a84010@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>No presente tpc foi-me pedido para desenvolver um xsl que gerasse páginas <b>arqX.html</b> que correspondessem a cada um dos Arquesitíos disponibilizados no ficheiro XML fornecido.</p>
+        <p>Como segundo passo foi também pedido o desenvolvimento de um servidor em node que respondesse às requests necessárias para o funcionamento do índice e das páginas individuais de arquesitios.</p>
+    </abstract>
+    <deliverables>
+        <link url="http://github.com/Ulissestsaraujo/DAW2020/tree/main/T4/arq.xml">arq.xml</link>
+        <link url="http://github.com/Ulissestsaraujo/DAW2020/tree/main/T4/arq.xsl">arq.xsl</link>
+        <link url="http://github.com/Ulissestsaraujo/DAW2020/tree/main/T4/mymod.js">mymod.js</link>
+        <link url="http://github.com/Ulissestsaraujo/DAW2020/tree/main/T4/server.js">server.js</link>
+        <link url="http://github.com/Ulissestsaraujo/DAW2020/tree/main/T4/projectrecord.xml">projectrecord.xml</link>
+    </deliverables>
+</pr>
