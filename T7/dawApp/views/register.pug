@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Register student
+      div(class="w3-container.w3-teal")
+        form(class="w3-container",action="/students",method="post")  
+            label(for="number") Number:
+            input.w3-input(type="text",id="number",name="number")
+            br
+            label(for="name") Name:
+            input.w3-input(type="text",id="name",name="name")
+            br
+            label(for="git") Git:
+            input.w3-input(type="text",id="git",name="git")
+            br
+            Check all of the TPCs done by the student:
+            br
+            - var i = 0
+            while i < 8
+                label(for=`${i+1}`)=i
+                input(type="checkbox",id=`${i+1}`,name=`${i+1}`,class="w3-check")
+                - i++
+
+            input.w3-input.w3-border.w3-grey(type="submit",value="Submit")
+
+        br
+      footer.w3-container.w3-teal
+        address Gerado por dawApp :: 2020-Nov, Ulisses Araújo
+
+  

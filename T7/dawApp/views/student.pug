@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3 #{student.nome} - #{student.numero}
+        .w3-container.w3 
+          hr
+          table.w3-table-all
+            tr.w3-black 
+              th TPC number
+              th Status
+            each tpc,index in student.tpc
+              tr.w3-black
+                td= index+1
+                td= (tpc == 0 ? 'Not done': 'Done')
+            hr
+      button.w3-button.w3-block.w3-teal
+        a(href='/students') Back to Homepage
+            
+
+  
