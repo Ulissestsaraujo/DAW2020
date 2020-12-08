@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../../Desktop/Uni/DAW/DAW2020/projectrecord.dtd">
+<pr>
+    <meta>
+        <key>TPC8</key>
+        <title>TPC8 de DAW 2020</title>
+        <bdate>Dezembro 2020</bdate>
+        <edate>Dezembro 2020</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="A84010">
+            <name>Ulisses Tiago Simões Araújo</name>
+            <email>a84010@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>No presente tpc foi-me pedido para modificar um sistema de upload de ficheiros para que fosse possivel fazer upload de vários ficheiros de uma vez.</p>
+        <p>Para este efeito foram realizadas algumas pequenas alterações no servidor para que processasse arrays ao invés de uma única file de cada vez, e tambén foi utilizado o <b>Jquery</b>. </p>
+    </abstract>
+    <deliverables>
+        <link url="http://github.com/Ulissestsaraujo/DAW2020/tree/main/T8/dawApp">Código fonte do servidor e forms</link>
+        <link url="http://github.com/Ulissestsaraujo/DAW2020/tree/main/T8/projectrecord.xml">projectrecord.xml</link>
+    </deliverables>
+</pr>
